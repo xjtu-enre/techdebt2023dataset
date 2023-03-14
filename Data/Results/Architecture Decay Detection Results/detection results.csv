@@ -1,0 +1,11 @@
+project name,version,¦Á,coupling,,,cohesion,,,#all problematic modules,#all problematic classes,#all problematic methods
+,,,#problematic modules,#problematic classes,#problematic methods,#problematic modules,#problematic classes,#problematic methods,,,
+apollo,v0.4.0->v0.5.0,0.4,21,44,123,1,1,1,21,45,124
+argouml,VERSION_0_18_1->VERSION_0_20,0.4,14,62,262,9,18,25,21,79,286
+AxonFramework,axon-3.2->axon-3.3,0.4,19,55,130,0,0,0,19,55,130
+bus,5.0.0->5.1.0,0.4,8,15,19,0,0,0,8,15,19
+junit4,r4.11->r4.12-beta-1,0.4,3,9,36,0,0,0,3,9,36
+Sentinel,0.1.0->0.1.1,0.4,10,13,17,0,0,0,10,13,17
+servicecomb-java-chassis,1.1.0->1.2.0,0.4,57,148,346,1,1,5,57,149,351
+train-ticket,0.0.1->0.0.2,0.4,1,1,1,0,0,0,1,1,1
+lineage/base,lineage-16.0->lineage-17.1,0.4,133,1087,8747,30,76,186,151,1157,8932
