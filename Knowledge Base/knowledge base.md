@@ -52,50 +52,50 @@ The metrics of all granularity are explained as follows.
 
 - class
 
-  | metric                 | description                                           | source                     |
-  | ---------------------- | ----------------------------------------------------- | -------------------------- |
-  | CBC                    | Number of class dependencies                          | CK                         |
-  | c_FAN_IN               | Number of class in-degree                             | CK                         |
-  | c_FAN_OUT              | Number of class out-degree                            | CK                         |
-  | IDCC                   | Direct class coupling  intra module                   | QMOOD                      |
-  | IODD                   | Out-degree dependency intra module                    | derived from IDCC in QMOOD |
-  | IIDD                   | In-degree dependency intra module                     | derived from IICC in QMOOD |
-  | EDCC                   | Direct class coupling external modules                | QMOOD                      |
-  | NAC                    | Number of ancestor classes                            | QMOOD                      |
-  | NDC                    | Number of descendent classes                          | QMOOD                      |
-  | NOI                    | Number of import classes                              | derived from NAC in QMOOD  |
-  | NOID                   | Number of imported classes                            | derived from NDC in QMOOD  |
-  | c_chm                  | The functional cohesion of class at the message layer | [4]                        |
-  | c_chd                  | The functional cohesion of class at the domain layer  | [4]                        |
-  | CIS                    | Class interface size                                  | QMOOD                      |
-  | NOM                    | Number of methods in the class                        | QMOOD                      |
-  | NOP                    | Number of polymorphic methods                         | QMOOD                      |
-  | CTM                    | Coupling through Message Passing                      | CK                         |
-  | RFC                    | Response for a class                                  | CK                         |
-  | NOF                    | Number of fields                                      | CK                         |
-  | NOVM                   | Number of visible methods                             | CK                         |
-  | NOSI                   | Number of static invocations                          | CK                         |
-  | TCC                    | Tight class cohesion                                  | CK                         |
-  | LCC                    | Loose class cohesion                                  | CK                         |
-  | LCOM                   | Lack of cohesion of methods                           | CK                         |
-  | LOCM*                  | Lack of cohesion of methods                           | CK                         |
-  | WMC                    | Weight Method Per Class                               | CK                         |
-  | c_modifiers            | Class modifiers                                       | CK                         |
-  | c_variablesQty         | Number of variables in the class                      | CK                         |
-  | privateMethodsQty      | Number of private methods                             | CK                         |
-  | protectedMethodsQty    | Number of protected methods                           | CK                         |
-  | staticMethodsQty       | Number of static methods                              | CK                         |
-  | defaultMethodsQty      | Number of default methods                             | CK                         |
-  | abstractMethodsQty     | Number of abstract methods                            | CK                         |
-  | finalMethodsQty        | Number of final methods                               | CK                         |
-  | synchronizedMethodsQty | Number of synchronized methods                        | CK                         |
-  | publicFieldsQty        | Number of public fields                               | CK                         |
-  | privateFieldsQty       | Number of private fields                              | CK                         |
-  | protectedFieldsQty     | Number of protected fields                            | CK                         |
-  | staticFieldsQty        | Number of static fields                               | CK                         |
-  | defaultFieldsQty       | Number of default fields                              | CK                         |
-  | finalFieldsQty         | Number of final fields                                | CK                         |
-  | synchronizedFieldsQty  | Number of synchronized fields                         | CK                         |
+  | metric                 | description                                                  | source                     |
+  | ---------------------- | ------------------------------------------------------------ | -------------------------- |
+  | CBC                    | Number of class dependencies                                 | CK                         |
+  | c_FAN_IN               | Number of class in-degree                                    | CK                         |
+  | c_FAN_OUT              | Number of class out-degree                                   | CK                         |
+  | IDCC                   | Direct class coupling  intra module                          | QMOOD                      |
+  | IODD                   | Out-degree dependency intra module                           | derived from IDCC in QMOOD |
+  | IIDD                   | In-degree dependency intra module                            | derived from IICC in QMOOD |
+  | EDCC                   | Direct class coupling external modules                       | QMOOD                      |
+  | NAC                    | Number of ancestor classes                                   | QMOOD                      |
+  | NDC                    | Number of descendent classes                                 | QMOOD                      |
+  | NOI                    | Number of import classes                                     | derived from NAC in QMOOD  |
+  | NOID                   | Number of imported classes                                   | derived from NDC in QMOOD  |
+  | c_chm                  | The functional cohesion of class at the message layer        | [4]                        |
+  | c_chd                  | The functional cohesion of class at the domain layer         | [4]                        |
+  | CIS                    | Class interface size                                         | QMOOD                      |
+  | NOM                    | Number of methods in the class                               | QMOOD                      |
+  | NOP                    | Number of polymorphic methods                                | QMOOD                      |
+  | CTM                    | Coupling through Message Passing                             | CK                         |
+  | RFC                    | Response for a class                                         | CK                         |
+  | NOF                    | Number of fields                                             | CK                         |
+  | NOVM                   | Number of visible methods                                    | CK                         |
+  | NOSI                   | Number of static invocations                                 | CK                         |
+  | TCC                    | Tight class cohesion                                         | CK                         |
+  | LCC                    | Loose class cohesion                                         | CK                         |
+  | LCOM                   | Lack of cohesion of methods                                  | CK                         |
+  | LOCM*                  | A normalized metric that computes the lack of cohesion of class within a range of 0 to 1. | CK                         |
+  | WMC                    | Weight Method Per Class                                      | CK                         |
+  | c_modifiers            | Class modifiers                                              | CK                         |
+  | c_variablesQty         | Number of variables in the class                             | CK                         |
+  | privateMethodsQty      | Number of private methods                                    | CK                         |
+  | protectedMethodsQty    | Number of protected methods                                  | CK                         |
+  | staticMethodsQty       | Number of static methods                                     | CK                         |
+  | defaultMethodsQty      | Number of default methods                                    | CK                         |
+  | abstractMethodsQty     | Number of abstract methods                                   | CK                         |
+  | finalMethodsQty        | Number of final methods                                      | CK                         |
+  | synchronizedMethodsQty | Number of synchronized methods                               | CK                         |
+  | publicFieldsQty        | Number of public fields                                      | CK                         |
+  | privateFieldsQty       | Number of private fields                                     | CK                         |
+  | protectedFieldsQty     | Number of protected fields                                   | CK                         |
+  | staticFieldsQty        | Number of static fields                                      | CK                         |
+  | defaultFieldsQty       | Number of default fields                                     | CK                         |
+  | finalFieldsQty         | Number of final fields                                       | CK                         |
+  | synchronizedFieldsQty  | Number of synchronized fields                                | CK                         |
 
 - method
 
